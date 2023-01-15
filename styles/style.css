@@ -6,7 +6,6 @@
 body{
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
-    overflow-x: hidden;
     box-sizing: border-box;
 }
 
@@ -180,7 +179,6 @@ ul li{
 /* Newsletter Section */
 .newsletter-box{
     background-color: #FF900E;
-    width: 1100px;
     margin: auto;
     color: #fff;
     text-align: center;
@@ -188,8 +186,11 @@ ul li{
     border-radius: 8px;
     margin-bottom: 50px;
 }
-form{
+.form-group{
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
+    gap: 20px;
 }
 .input-adjust{
     padding: 15px;
@@ -202,14 +203,16 @@ form{
     color: #FF900E;
 }
 /* Footer Section */
-footer .copyright-text{
+footer{
     background-color: #FFF4E7;
+}
+footer .copyright-text{
     border-radius: 8px;
     padding: 30px;
     text-align: center;
 }
 /* Mobile Responsive */
-@media (max-width:600px) {
+@media only screen and (max-width:600px) {
     /* Global CSS*/
     h1{
         font-size: 40px;
@@ -217,11 +220,8 @@ footer .copyright-text{
     h2{
         font-size: 30px;
     }
-
     .container{
-        width: 100%;
-        margin: auto;
-        padding: 0px 50px;
+        width: 85%;
     }
     .d-flex{
         flex-wrap: wrap;
@@ -232,70 +232,75 @@ footer .copyright-text{
     img{
         width: 100% ;
     }
-     
-    /* Header Section */
-    header nav h2,ul{
+
+    /* Header Section*/
+    header nav h2,header nav ul{
         width: 100%;
         text-align: center;
     }
     header nav ul{
         margin-top: 20px;
     }
-    /* Hero Section*/
-    #hero-section{
-        height: 850px;
-    }
-    .hero-content{
-        width: 100%;
-    }
-    #hero-section img{
-        margin-top: -80px;
-    }
-    /* Quick Features Section*/
-    #quick-feature{
-        padding-top: 80px;
-        padding-bottom: 130px;
-    }
-    /* Features Section */
-    .features-left-side,.features-right-side{
-        width: 100%;
-    }
-    .features-right-side img{
-        margin-left: 0px;
-    }
-    .experience-box{
-        margin: 0 auto;
-        margin-top: -40px;
-    }
-    /* Some Facts Section */
-    .some-facts-heading{
-        width: 100%;
-        text-align: center;
-    }
-    .image-box{
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    .image-box img{
-        width: auto;
-    }
-    /* Our Sponsors */
-    .our-sponsors-headings{
-        width: 100%;
-    }
-    .all-sponsors img{
-        width: 100%;
-        margin-bottom: 40px;
-        padding: 0 80px;
-
-    }
-    /* Newsletter Section */
-.newsletter-box{
+/* Hero Section*/
+#hero-section{
+    height: 850px;
+}
+.hero-content{
     width: 100%;
 }
-    /* Footer Section*/
-    .copyright-text{
-        width: 100%;
-    }
+#hero-section img{
+    margin-top: -80px;
+}
+/* Quick Features Section*/
+#quick-feature{
+    padding-top: 80px;
+    padding-bottom: 130px;
+}
+/* Features Section */
+.features-left-side,.features-right-side{
+    width: 100%;
+}
+.features-right-side img{
+    margin-left: 0px;
+}
+.experience-box{
+    margin: 0 auto;
+    margin-top: -40px;
+}
+/* Some Facts Section */
+.some-facts-heading{
+    width: 100%;
+    text-align: center;
+}
+.image-box{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.image-box img{
+    width: auto;
+}
+/* Our Sponsors */
+.our-sponsors-headings{
+    width: 100%;
+}
+.all-sponsors img{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 40px;
 
+}
+/* Newsletter Section */
+.newsletter-box{
+width: 70%;
+}
+.input-adjust,.btn-white{
+    width: 100%;
+    margin-top: 10px;
+}
+/* Footer Section*/
+.copyright-text{
+    width: 80%;
+    margin: auto;
+}
 }
